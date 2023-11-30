@@ -1,0 +1,132 @@
+body {
+    height: 150vh;
+    background-color: #161617;
+    padding: 10em;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #FFFFFC;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+
+.cardsContainer {
+    text-align:center;
+    padding-top:100px;
+    margin-bottom:250px;
+    color: #FFFFFC;
+}
+
+.cardsContainer .leaders {
+ margin-bottom:25px;
+}
+
+.cardsContainer p {
+ margin-bottom:25px;
+}
+
+.cardsContainer h6 {
+    margin-bottom:50px;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-card {
+    position: absolute;
+    width: 100%;
+    top:0px; 
+    height: 200px;
+    background-color: #FFFFFC;
+    color:#161617;
+    margin-bottom:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    border-radius:5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.custom-card::before {
+    position:absolute;
+    content:"";
+    width:15px;
+    height:15px;
+    background:#D34728;
+    border-radius:50px;
+    top:-7px;
+    left:-7px;
+}
+
+.card2{
+   top:10px; 
+}
+.card3{
+  top:20px; 
+}
+.card4 {
+    top:30px; 
+}
+.opacity{
+    -moz-transition:0.5s ease;
+    -ms-transition:0.5s ease;
+    -o-transition:0.5s ease;
+    transition:1.5s ease;
+    -webkit-transition:1.5s ease;
+  opacity:0.6;
+}
+.scale{
+    -moz-transition:0.5s ease;
+    -ms-transition:0.5s ease;
+    -o-transition:0.5s ease;
+    transition:1.5s ease;
+    -webkit-transition:1.5s ease;
+    width:95%;
+}
+
+@media screen and (max-width:1024px) {
+    .cardsContainer {
+    padding-top:50px;
+}
+    .cardsContainer h2 {
+        font-size:50px;
+    }
+    .cardsContainer h4 {
+        font-size:32px;
+        max-width:450px;
+    }
+    
+.cardsContainer h6 {
+    margin-bottom:20px;
+    
+}
+.custom-card {
+    width:90%;
+}
+}
+
+@media screen and (max-width:767px) {
+    .cardsContainer h2 {
+        font-size:35px;
+        letter-spacing:-1px;
+    }
+    
+    .cardsContainer h4 {
+        font-size:24px;
+        max-width:350px;
+    }
+    
+    .work {
+        max-width:300px;
+        margin:0 auto;
+    }
+}
